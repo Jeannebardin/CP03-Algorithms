@@ -14,10 +14,10 @@ For any given number:
 
 ## Running your file
 
-The file in this project is called `index.js`. To run this file use the command:
+There is a file in this project is called `fizzbuzz.js`. To run this file use the command:
 
 ```sh
-node index
+node fizzbuzz
 ```
 
 To see some output from the file you will need to make sure you use `console.log` to print it out.
@@ -69,13 +69,13 @@ Rather than using our arrays, create your own! Use a loop to create a new array 
 We want to let our users generate their own fizzbuzz sequence without having to open our code and change it. We will now call out file and include the max number in the command, e.g.:
 
 ```sh
-> node index 15
+> node fizzbuzz 15
 ```
 
 As a reminder, `process.argv` will give you access to any strings used in the terminal when you call a js file, so use this to set your `max` and log the result.
 
 ```sh
-> node index 7
+> node fizzbuzz 7
 [ 1, 2, "Fizz", 4, "Buzz", "Fizz", 7 ]
 ```
 
@@ -83,10 +83,10 @@ As a reminder, `process.argv` will give you access to any strings used in the te
 
 Printing an array all at once isn't that exciting for our users. Use something like `setTimeout` or `setInterval` to create a delay of a second (or less) and print out the elements of the array one after the other. Some tricky questions might come up during this. How will you wait for one to be printed before calling the next one? How will you know you've reached the end?
 
-The result should be that when we ask our computer to `node index 100`, it appears to count up and play a game of fizzbuzz with us!
+The result should be that when we ask our computer to `node fizzbuzz 100`, it appears to count up and play a game of fizzbuzz with us!
 
 ```sh
-> node index 100
+> node fizzbuzz 100
 1
 2
 Fizz
