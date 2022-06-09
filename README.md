@@ -51,7 +51,7 @@ const arr3 = [ 17, -12, "hello", 5, 23, 60, -7, null, 13 ]
 
 ## Release 4
 
-Time to refactor! Make sure your code to 'fizzbuzz-ify the array' is contained in a function. We should be able to pass it an array, and it should return us the new array. I.e. the following code should print out the result for arr1.
+Time to refactor! Make sure your code to 'fizzbuzz-ify the array' is contained in a function. We should be able to pass it an array, and it should return us the new array, i.e. if we wrote the following code it should print out the result for arr1.
 
 ```js
 const result = fizzbuzz(arr1)
@@ -62,8 +62,45 @@ Read over the code you have written so far. How could you make it more readable?
 
 ## Release 5
 
-Generate a new array.
+Rather than using our arrays, create your own! Use a loop to create a new array full of numbers, perhaps from 1 - 10 like `arr1`. The next step will be to make the loop (and therefore the array it creates) adjustable. Create a variable `max` and alter your code so if the variable `max` equals 20, your array will contain the numbers 1 - 20. This generated array should then be passed to your fizzbuzz function and the result printed on the terminal.
 
 ## Release 6
 
-Command line usability
+We want to let our users generate their own fizzbuzz sequence without having to open our code and change it. We will now call out file and include the max number in the command, e.g.:
+
+```sh
+> node index 15
+```
+
+As a reminder, `process.argv` will give you access to any strings used in the terminal when you call a js file, so use this to set your `max` and log the result.
+
+```sh
+> node index 7
+[ 1, 2, "Fizz", 4, "Buzz", "Fizz", 7 ]
+```
+
+## Release 7
+
+Printing an array all at once isn't that exciting for our users. Use something like `setTimeout` or `setInterval` to create a delay of a second (or less) and print out the elements of the array one after the other. Some tricky questions might come up during this. How will you wait for one to be printed before calling the next one? How will you know you've reached the end?
+
+The result should be that when we ask our computer to `node index 100`, it appears to count up and play a game of fizzbuzz with us!
+
+```sh
+> node index 100
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+.
+.
+.
+.
+etc :)
+```
