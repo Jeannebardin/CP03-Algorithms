@@ -58,7 +58,8 @@ const result = fizzbuzz(arr1)
 console.log(result)
 ```
 
-Read over the code you have written so far. How could you make it more readable? Are there any different ways you could write the same functionality now that you have made it work?
+Read over the code you have written so far. How could you make it more readable? Are there any different ways you could write the same functionality now that you have made it work
+?
 
 ## Release 5
 

@@ -24,7 +24,13 @@ const result = fizzbuzz(arr1)
 console.log(result)
 ​
 
-
+// Release 5 Pseudocode
+// const newArr = []
+// make loop
+// let max = banana[i]
+// if max = 20 replace with const ArrOneToTwenty
+// pass new array to fizzbuzz func
+// print result (console.log)
 
 
 
